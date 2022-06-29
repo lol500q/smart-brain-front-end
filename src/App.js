@@ -96,7 +96,7 @@ const app = new Clarifai.App({
          console.log('hi', response)
          if (response) {
            fetch('http://localhost:3000/image', {
-             method: 'put',
+             method: 'post',
              headers: {'Content-Type': 'application/json'},
              body: JSON.stringify({
                id: this.state.user.id
